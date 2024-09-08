@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+.topo__personagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.topo__logo {
+    text-align: center;
+}
+
+.topo__link {
+    font-family: var(--fonte-principal);
+    font-size: 2.8rem;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.topo__pesquisa {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.topo__pesquisa-campo {
+    border-radius: 8px;
+    border: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0.8rem 1rem;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topo__pesquisa-campo:focus {
+    outline: none;
+}
+
+.topo__pesquisa-campo::placeholder {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--preto);
+}
+
+.topo__botao {
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: 0;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topo__botao:hover {
+    background-color: var(--azul);
+    color: var(--preto);
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.61);
+    transition: all .3s;
+}
+
+.container__principal-personagem {
+    background-color: var(--azul-escuro);
+    
+}
+
+.container__card-personagem {
+    color: var(--branco);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-inline: 4rem;
+}
+
+
+.cabecalho__personagem {
+    padding-inline: 1rem;
+}
+
+.personagem__perfil {
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 2rem;
+}
+
+.imagem-personagem {
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid #e4e728;
+}
+
+.personagem__nome {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.personagem__grupo {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--laranja);
+}
+
+.personagem__descricao {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    text-align: justify;
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+}
+
+.personagem__descricao span {
+    text-decoration: underline;
+    color: var(--laranja);
+}
+
+.rodape-personagem {
+    text-align: center;
+    max-width: 900px;
+    margin: 5rem auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .topo__pesquisa {
+        max-width: 500px;
+    }
+
+    .topo__link {
+        font-size: 4.5rem;
+    }
+
+    .topo__pesquisa-campo {
+        padding: 1rem 0;
+    }
+
+    .topo__botao {
+        padding: 1rem 0;
+    }
+
+    .personagem__descricao {
+        max-width: 550px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .container__principal-personagem {
+        background-color: var(--preto);
+    }
+    
+    .container__card-personagem {
+        background-color: var(--azul-escuro);
+        width: 45%;
+        border-radius: 16px;
+        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.322);
+        padding: 1.5rem;
+        margin: 2rem auto;
+    }
+
+    .pesquisa__campo {
+        max-width: 500px;
+    }
+
+    .rodape {
+        width: 90%;
+    }
+
+    .rodape__texto {
+        font-size: 1rem;
+    }
+}
